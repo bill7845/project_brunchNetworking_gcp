@@ -2,7 +2,7 @@ FROM python:3.7
 
 WORKDIR /app
 
-COPY requirements.txt requirements.txt # 설치 필요한 라이브러리
+COPY requirements.txt ./requirements.txt # 설치 필요한 라이브러리
 COPY tfidf_train_matrix.pkl ./tfidf_train_matrix.pkl 
 COPY tfidf_train_vect.pkl ./tfidf_train_vect.pkl
 COPY Testing Video.mp4 ./Testing Video.mp4
