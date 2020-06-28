@@ -8,7 +8,7 @@ COPY tfidf_train_vect.pkl ./tfidf_train_vect.pkl
 COPY Testing_Video.mp4 ./Testing_Video.mp4
 COPY brunch_network.db ./brunch_network.db
 
-COPY classifier_lg.pkl ./classifier_lg.pkl # model
+COPY classifier_lg.pkl ./classifier_lg.pkl
 
 COPY all_df.csv ./all_df.csv
 
