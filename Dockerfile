@@ -2,15 +2,15 @@ FROM python:3.7
 
 WORKDIR /app
 
-COPY tfidf_train_matrix.pkl ./tfidf_train_matrix.pkl 
 COPY requirements.txt ./requirements.txt
+COPY tfidf_train_matrix.pkl ./tfidf_train_matrix.pkl 
 COPY tfidf_train_vect.pkl ./tfidf_train_vect.pkl
-COPY Testing Video.mp4 ./Testing Video.mp4
+COPY Testing_Video.mp4 ./Testing_Video.mp4
 COPY brunch_network.db ./brunch_network.db
 
 COPY classifier_lg.pkl ./classifier_lg.pkl # model
 
-COPY all_df.csv ./all_df.csv # 사용되는 데이터셋
+COPY all_df.csv ./all_df.csv
 
 COPY 0tfidf_matrix.pkl ./0tfidf_matrix.pkl 
 COPY 1tfidf_matrix.pkl ./1tfidf_matrix.pkl 
